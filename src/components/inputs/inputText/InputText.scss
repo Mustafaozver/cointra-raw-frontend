@@ -1,0 +1,46 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+.input-text {
+  margin: 0 0 0.5rem;
+
+  .input-text__label {
+    font-weight: bold;
+    color: $color-third;
+    padding-bottom: 0.3rem;
+  }
+
+  .input-text__alert {
+    font-size: 9px;
+    color: $color-main;
+    visibility: hidden;
+  }
+
+  .mypz-text-field {
+    input {
+      border-bottom: 1px solid $color-border;
+      width: 100%;
+      padding: 6px 0;
+  
+      &:focus {
+        border-bottom: 1px solid $color-main;
+      }
+    }
+  }
+
+  &.show-error {
+
+    .input-text__alert {
+      visibility: visible;
+    }
+
+    .input-text__label {
+      color: $color-main;
+    }
+
+    .mypz-text-field {
+      input {
+        border-bottom: 1px solid $color-main;
+      }
+    }
+  }
+}

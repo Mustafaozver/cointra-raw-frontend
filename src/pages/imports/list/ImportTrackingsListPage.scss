@@ -1,0 +1,44 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+.page-tracking-import-list {
+  .page-tracking-import-list__form {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    .page-tracking-import-list__form__input {
+      width: 50%;
+    }
+
+    .page-tracking-import-list__form__input-select {
+      padding: 0.15rem;
+      width: 30%;
+    }
+  }
+
+  .page-tracking-import-list__content {
+    white-space: nowrap;
+  }
+
+  .page-tracking-import-list__url_data {
+    max-width: 10rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .page-tracking-import-list__pagination-block {
+    margin: 0.2rem auto;
+    display: flex;
+
+    .page-tracking-import-list__pagination-block__total{
+      font-size: 13px;
+      font-weight: bold;
+      align-self: center;
+    }
+
+    .page-tracking-import-list__pagination-block__selector {
+      margin: auto;
+    }
+  }
+
+}

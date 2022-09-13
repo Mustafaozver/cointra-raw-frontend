@@ -1,0 +1,54 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+.image-crop {
+    .image-crop__image-container {
+        background-color: $color-border;
+        margin-bottom: 0.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .image-crop__upload-image-button {
+        display: inline-block;
+    }
+
+    .image-crop__upload-image-label {
+        margin-right: 0.5rem;
+    }
+}
+
+.image-crop__modal {
+    padding: 2rem;
+
+    .image-crop__modal-cropper-area {
+        background-color: $color-main-lighter;
+        min-height: 20rem;
+        min-width: 20rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .image-crop__modal-crop-placeholder,
+    .image-crop__modal-actions {
+        margin-top: 1rem;
+    }
+
+    .image-crop__modal-crop-placeholder {
+        text-align: center;
+    }
+
+    .image-crop__modal-actions {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-crop__modal-file-button {
+        display: none;
+    }
+}

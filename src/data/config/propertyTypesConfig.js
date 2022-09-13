@@ -1,0 +1,148 @@
+const propertyTypesConfig = [
+  {
+    code: 'APT',
+    value: 'Apartment',
+    residential: true,
+    commercial: false,
+  },
+  {
+    code: 'BUL',
+    value: 'Bulk Units',
+    residential: true,
+    commercial: true,
+  },
+  {
+    code: 'COM',
+    value: 'Compound',
+    residential: true,
+    commercial: false,
+  },
+  {
+    code: 'DUP',
+    value: 'Duplex',
+    residential: true,
+    commercial: false,
+  },
+  {
+    code: 'FAC',
+    value: 'Factory',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'FFL',
+    value: 'Full Floor',
+    residential: true,
+    commercial: true,
+  },
+  {
+    code: 'HFL',
+    value: 'Half Floor',
+    residential: true,
+    commercial: true,
+  },
+  {
+    code: 'HTA',
+    value: 'Hotel Apartment',
+    residential: true,
+    commercial: true,
+  },
+  {
+    code: 'STF',
+    value: 'Staff Accommodation',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'LAN',
+    value: 'Land/Plot',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'OFF',
+    value: 'Office',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'PEN',
+    value: 'Penthouse',
+    residential: true,
+    commercial: false,
+  },
+  {
+    code: 'RET',
+    value: 'Retail',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'RES',
+    value: 'Restaurant',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'SHP',
+    value: 'Shop',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'SHW',
+    value: 'Showroom',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'STO',
+    value: 'Storage',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'TWN',
+    value: 'Townhouse',
+    residential: true,
+    commercial: true,
+  },
+  {
+    code: 'VIL',
+    value: 'Villa/House',
+    residential: true,
+    commercial: true,
+  },
+  {
+    code: 'BUI',
+    value: 'Whole Building',
+    residential: true,
+    commercial: true,
+  },
+  {
+    code: 'WAR',
+    value: 'Warehouse',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'BUN',
+    value: 'Bungalow',
+    residential: false,
+    commercial: true,
+  },
+  {
+    code: 'LFT',
+    value: 'Loft',
+    residential: true,
+    commercial: false,
+  },
+  {
+    code: 'HOT',
+    value: 'Hotel',
+    residential: true,
+    commercial: true,
+  },
+];
+
+export default propertyTypesConfig;

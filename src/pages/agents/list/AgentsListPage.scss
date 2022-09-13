@@ -1,0 +1,32 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+.page-agents-list {
+  .page-agents-list__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-agents-list__search-field {
+    width: 20rem;
+  }
+
+  .page-agents-list__see-details {
+    line-height: 0.5rem;
+    display: flex;
+  }
+
+  .page-agents-list__pagination-block {
+    margin: 0.2rem auto;
+    display: flex;
+
+    .page-agents-list__pagination-block__total{
+      font-size: 13px;
+      font-weight: bold;
+      align-self: center;
+    }
+
+    .page-agents-list__pagination-block__selector {
+      margin: auto;
+    }
+  }
+}

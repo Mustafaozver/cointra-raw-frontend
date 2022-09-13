@@ -1,0 +1,15 @@
+.page-update-post {
+  .page-update-post__field {
+    margin-bottom: 0.5rem;
+  }
+
+  .page-update-post__status {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .page-update-post__status-action {
+    display: inline-block;
+  }
+}

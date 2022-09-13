@@ -1,0 +1,142 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+@mixin activeLink {
+    background-color: #f0f0f09c;
+    border-radius: 30px;
+}
+
+.menu {
+    .mobile-menu {
+        background-color: transparent;
+        padding: 0.5rem 0;
+        box-shadow: $shadow-regular;
+
+        @include desktopBreakpoint {
+            display: none;
+        }
+    }
+
+    .web-menu {
+        background-color: transparent;
+        padding: 0.5rem 0;
+        box-shadow: $shadow-regular;
+
+        &.no-shadow {
+            box-shadow: none;
+        }
+
+        @include mobileBreakpoint {
+            display: none;
+        }
+
+        @include tabletBreakpoint {
+            display: none;
+        }
+
+        .web-menu-container {
+            display: flex;
+            justify-content: space-between;
+
+            .menu-links-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .active .link-item {
+                    @include activeLink;
+                }
+
+                .link-item {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 5px 10px;
+                    color: black;
+
+                    &:hover {
+                        @include activeLink;
+                    }
+                }
+            }
+
+            .web-menu-logo {
+                width: 12rem;
+            }
+        }
+    }
+
+    .menu-breadcrumbs {
+        margin-left: 0.5rem;
+    }
+}
+
+.app-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+
+    .menu-icon {
+        font-size: 2rem;
+        color: $color-main;
+    }
+
+    .app-bar-logo {
+        width: 12rem;
+    }
+}
+
+.mobile-menu-drawer {
+    @include desktopBreakpoint {
+        display: none;
+    }
+
+    .menu-drawer {
+        background-color: $color-main;
+        text-align: center;
+        color: white;
+    
+        .link-item {
+            margin: 0 2px;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            padding: 5px 10px;
+            display: inline-block;
+    
+            &:hover {
+                @include activeLink;
+            }
+        }
+    
+        .menu-links-container {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem 0;
+        }
+    
+        .active .link-item {
+            @include activeLink;
+        }
+
+        .menu-breadcrumbs {
+            @include mobileBreakpoint {
+                display: none;
+            }
+    
+            @include tabletBreakpoint {
+                display: none;
+            }
+        }
+    }
+}
+
+.menu-login-container {
+    &:hover {
+        cursor: pointer;
+    }
+
+    svg {
+        font-size: 2.5rem;
+    }
+}

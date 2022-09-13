@@ -1,0 +1,31 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+.page-posts-list {
+  .page-posts-list__create-new {
+    display: flex;
+  }
+
+  .page-posts-list__search-field {
+    width: 20rem;
+  }
+
+  .page-posts-list__see-details {
+    line-height: 0.5rem;
+    display: flex;
+  }
+
+  .page-posts-list__pagination-block {
+    margin: 0.2rem auto;
+    display: flex;
+
+    .page-posts-list__pagination-block__total{
+      font-size: 13px;
+      font-weight: bold;
+      align-self: center;
+    }
+
+    .page-posts-list__pagination-block__selector {
+      margin: auto;
+    }
+  }
+}

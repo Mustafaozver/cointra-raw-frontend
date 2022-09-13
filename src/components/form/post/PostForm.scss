@@ -1,0 +1,12 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+.form-post__field {
+  margin-bottom: 0.5rem;
+}
+
+.form-post__field__label {
+  font-size: inherit;
+  font-weight: bold;
+  color: $color-third;
+  padding-bottom: 0.3rem;
+}

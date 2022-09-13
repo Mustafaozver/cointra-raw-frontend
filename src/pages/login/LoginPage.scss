@@ -1,0 +1,24 @@
+@import "@mypz/react-kit/components/mypz.scss";
+
+.page-login {
+  .page-login__form {
+    border: 1px solid $color-border;
+    border-radius: 0.8rem;
+    padding: 1rem 1.5rem;
+    width: 30rem;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: start;
+    font-size: 13px;
+    position: relative;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+
+    .page-login__form__input {
+      margin: 1rem auto;
+      width: 100%;
+    }
+  }
+}
